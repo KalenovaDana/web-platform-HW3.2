@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title> Registration page 1 </title>
+<link rel="stylesheet" href="index.css">
+<style>  
+body {
+    background-color: blanchedalmond;
+}
+h1 {
+    color: brown;
+    display: inline;
+    font-size: 3em;
+    margin-left: 550px;
+    padding: 10px;
+}
+
+p {
+    color:rgba(249, 153, 86, 0.936)
+
+}
+.female {
+    color: pink;
+}
+.male {
+    color:rgb(0, 179, 255);
+}
+.box2 {
+    /* display: inline-block;*/
+    box-sizing: border-box;
+    border-color: brown;
+    color: rgba(249, 153, 86, 0.936) 
+    }
+
+.box2 {
+    border: 5px;
+    left: 50px;
+    background-color: aliceblue;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 10px;
+    padding: 25px;
+    border-radius: 6px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#paragraph {
+    margin-left: 650px;
+}
+
+</style>
+</head>
+
+<body>
+<h1> Зарегестрироваться </h1>
+<p id="paragraph">Заполните форму </p> 
+
+<form class="box2">
+<label for="firstname">
+<input type="text" id="firstname" name="firstname"> Имя  </label> <br>
+<label for="lastname">
+<input type="text" id="lastname" name="lastname"> Фамилия</label> <br>
+<label for="email">
+<input type="email" id="email" name="email"> Почта </label> <br>
+<label for="password">
+<input type="password" id="password" name="password"> Пароль </label> <br>
+<label for="tel">
+<input type="tel" id="tel" name="tel"> Номер телефона </label> <br>
+<label><input type="date" name="date"> Дата регистрации </label>
+
+<p>Укажите пол</p>
+<label for="female" class="female">
+<input type="radio" id="female" name="gender"> Женский </label>
+<label for="male" class="male">
+<input type="radio" id="male" name="gender"> Мужской </label>
+<label for="checkbox">
+<input type="checkbox"> Согласие на обработку данных </label>
+
+</form>
+
+<form action="index2.html">
+    <button style="color: brown; border-radius:5px; 
+    margin-top: 10px;
+    margin-left: 620px;
+    padding:10px; 
+    background-color: rgb(251, 152, 82);
+    font-size: large;"
+> Зарегестритроваться </button>
+</form>
+</body>
+</html>

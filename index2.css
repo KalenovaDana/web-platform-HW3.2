@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(1, 78, 92, 0.941);
+  min-height: 170vh;
+  display: flex;
+  flex-direction: column;
+}
+article {
+  margin: auto 0;
+}
+.sidebar {
+  position: fixed;
+  z-index: 3;
+}
+
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  position: relative;
+  z-index: 3;
+}
+.h3 {
+  background-color: rgb(9, 7, 43);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  padding-left: 400px;
+  padding-right: 400px;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0px;
+  margin-left: 0px;
+}
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 3px;
+}
+
+li {
+  color: azure;
+  border: 2px solid rgb(0, 255, 255);
+  background: rgb(0, 255, 255);
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 0px;
+  width: 200px;
+  align-items: flex-start;
+  margin: 3px;
+}
+.section-img {
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  z-index: 0;
+}
+
+.content {
+  color: azure;
+  position: absolute;
+  top: 600px;
+  display: flex;
+  flex-direction: row;
+  left: 300px;
+  margin-top: 100px;
+  z-index: 0;
+}
+.content section:target {
+  outline: 2px dotted rgb(255, 0, 162);
+}
+.p1 {
+  display: flex;
+  color: azure;
+  background-color: blueviolet;
+  padding: 35px;
+  position: absolute;
+  z-index: 0;
+  justify-content: center;
+
+  z-index: 1;
+}
+.p2 {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  color: azure;
+  background-color: blueviolet;
+  position: static;
+  bottom: 100px;
+  padding: 35px;
+  z-index: 0;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(9, 7, 43);
+  color: azure;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-top: auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .content {
+    display: flex;
+    background: #333;
+    margin: 0;
+    padding: 0px;
+    position: absolute;
+    top: 600px;
+    flex-direction: column;
+    left: 0;
+  }
+}
+footer {
+  margin-top: auto;
+}
+/*я не успеваю доделать адаптивную версию по времени, не совсем поняла как это 
+    работает в теории вроде понятно а на практике не получается*/

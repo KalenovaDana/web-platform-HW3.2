@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+box-sizing: border-box;
+}
+body {
+background-color: blanchedalmond;
+}
+h1 {
+margin-left: 500px;
+}
+.list-1 {
+color: brown;
+font-weight: bold;
+
+}
+.alist-1,
+.alist-2,
+.alist-3 {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-left: 20px;
+padding: 10px;
+}
+
+.table {
+margin-left: 500px;
+}
+tr+.list-8 {
+color: rgb(202, 48, 92);
+}
+#test{
+color:brown;
+
+}
+div p:first-child {
+color: brown;
+font-weight: bold;
+}
+
+dt:nth-child(2n+1){
+color: brown;
+font-weight: bold;
+}  
+th::first-letter {
+font-size: 130%;
+color:rgb(48, 23, 23)
+}
+button:hover {
+background-color: #7bff00;
+}
+.button-3 {
+    background-color: rgb(251, 152, 82);
+    color: brown; border-radius:5px;
+    font-size: large;
+    margin-top: 10px;
+    margin-left: 600px;
+    padding:10px; 
+}
+     
